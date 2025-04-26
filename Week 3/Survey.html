@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="title">Customer Feedback Survey</h1>
+  <p id="description">We appreciate your time. Please fill out this short survey to help us improve our services.</p>
+
+  <form id="survey-form">
+    <label id="name-label" for="name">Name:</label>
+    <input id="name" type="text" placeholder="Enter your full name" required />
+
+    <label id="email-label" for="email">Email:</label>
+    <input id="email" type="email" placeholder="Enter your email address" required />
+
+    <label id="number-label" for="number">Age:</label>
+    <input id="number" type="number" placeholder="Enter your age" min="10" max="120" />
+
+    <label for="dropdown">How did you hear about us?</label>
+    <select id="dropdown">
+      <option value="">Select an option</option>
+      <option value="social">Social Media</option>
+      <option value="friend">Friend or Family</option>
+    </select>
+
+    <p>Would you recommend us to a friend?</p>
+    <label><input type="radio" name="recommend" value="yes" /> Yes</label>
+    <label><input type="radio" name="recommend" value="no" /> No</label>
+
+    <p>What services do you use? (Check all that apply)</p>
+    <label><input type="checkbox" value="app" /> Mobile App</label>
+    <label><input type="checkbox" value="website" /> Website</label>
+    <label><input type="checkbox" value="support" /> Customer Support</label>
+
+    <label for="comments">Any comments or suggestions?</label>
+    <textarea id="comments" rows="4" placeholder="Enter your message here..."></textarea>
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>
+
