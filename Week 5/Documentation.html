@@ -1,66 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Product Landing Page</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header id="header">
-      <img
-        id="header-img"
-        src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-        alt="Logo"
-      />
-      <nav id="nav-bar">
-        <a class="nav-link" href="#features">Features</a>
-        <a class="nav-link" href="#how-it-works">How It Works</a>
-        <a class="nav-link" href="#pricing">Pricing</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    <main>
-      <section id="features">
-        <h2>Features</h2>
-        <p>Fast. Reliable. Responsive. Our product is made with modern tech to power your productivity.</p>
-      </section>
+  <nav id="navbar">
+    <header>JavaScript Docs</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Variables">Variables</a>
+    <a class="nav-link" href="#Functions">Functions</a>
+    <a class="nav-link" href="#Loops">Loops</a>
+    <a class="nav-link" href="#Objects">Objects</a>
+  </nav>
 
-      <section id="how-it-works">
-        <h2>How It Works</h2>
-        <iframe
-          id="video"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-          title="Product video"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
-      </section>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>JavaScript is a versatile language used for web development.</p>
+      <p>It can be used for both client-side and server-side programming.</p>
+      <code>console.log("Hello, world!");</code>
+      <p>It is often used with HTML and CSS to create dynamic web pages.</p>
+      <p>JS is interpreted and runs in the browser.</p>
+      <ul>
+        <li>High-level</li>
+        <li>Dynamic typing</li>
+        <li>Prototype-based</li>
+      </ul>
+    </section>
 
-      <section id="pricing">
-        <h2>Pricing</h2>
-        <ul>
-          <li><strong>Basic:</strong> Free</li>
-          <li><strong>Pro:</strong> $9.99/month</li>
-          <li><strong>Enterprise:</strong> Contact us</li>
-        </ul>
-      </section>
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>Variables store data in memory for later use.</p>
+      <p>You can declare them using var, let, or const.</p>
+      <code>let name = "Alice";</code>
+      <p>Use `let` and `const` instead of `var` in modern JS.</p>
+      <p>Const variables can't be reassigned.</p>
+      <ul>
+        <li>let - block scoped</li>
+        <li>const - block scoped, immutable</li>
+        <li>var - function scoped</li>
+      </ul>
+    </section>
 
-      <section id="signup">
-        <h2>Sign Up for Updates</h2>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-            required
-          />
-          <input type="submit" id="submit" value="Get Started" />
-        </form>
-      </section>
-    </main>
-  </body>
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions perform tasks and return values.</p>
+      <p>You can declare a function using the `function` keyword or arrow syntax.</p>
+      <code>function greet() { return "Hi"; }</code>
+      <p>Functions help in code reuse and organization.</p>
+      <p>Arrow functions are more concise.</p>
+      <ul>
+        <li>Named function</li>
+        <li>Anonymous function</li>
+        <li>Arrow function</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Loops">
+      <header>Loops</header>
+      <p>Loops allow repetition of code blocks.</p>
+      <p>Common loops are for, while, and do...while.</p>
+      <code>for(let i=0; i<5; i++) { console.log(i); }</code>
+      <p>Use `break` and `continue` to control loop flow.</p>
+      <p>Loops are key in data processing.</p>
+      <ul>
+        <li>for loop</li>
+        <li>while loop</li>
+        <li>do...while loop</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Objects">
+      <header>Objects</header>
+      <p>Objects hold key-value pairs.</p>
+      <p>They are used to model real-world entities.</p>
+      <code>const person = {name: "Bob", age: 30};</code>
+      <p>You can access values using dot or bracket notation.</p>
+      <p>Objects can also contain methods (functions).</p>
+      <ul>
+        <li>Object literals</li>
+        <li>Methods</li>
+        <li>Nested objects</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
 </html>
