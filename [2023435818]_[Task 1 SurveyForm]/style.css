@@ -1,13 +1,17 @@
-
 body {
-  font-family: Arial, sans-serif;
+  font-family:Times New Roman, sans-serif;
   margin: 2rem;
-  background-color: #f7f9fc;
+   background-color: #eef2f7;;
   color: #333;
+  display: block;
+}
+#title,
+#description {
+  text-align: center;
 }
 
 form {
-  background: #fff;
+  background-color: #fef6e4;
   padding: 2rem;
   border-radius: 8px;
   max-width: 600px;
@@ -36,5 +40,3 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
-
-

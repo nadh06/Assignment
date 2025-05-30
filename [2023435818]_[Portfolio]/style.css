@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #e8dfff;
+}
+
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgb(193, 53, 193);
+  padding: 1rem 0;
+  z-index: 1000;
+  font-family: italic;
+  font-size: 130%;
+}
+#navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+#navbar ul li {
+  margin: 0 15px;
+}
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #E0B0FF;
+  color: #B87333;
+  text-align: center;
+  padding: 2rem;
+  font-family: Times New Roman, sans-serif;
+}
+#welcome-section h1 {
+  font-size: 3rem;
+}
+#welcome-section p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+
+#projects {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+#projects h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-family: italic;
+  color: brown;
+}
+.project-tile {
+  margin: 1rem auto;
+  width: 320px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.project-tile:hover {
+  transform: translateY(-5px);
+}
+.project-tile img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.project-tile p {
+  padding: 1rem;
+  font-weight: 500;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 2rem;
+  justify-items: center;
+}
+
+
+@media (max-width: 600px) {
+  #navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #projects {
+    padding: 2rem 1rem;
+  }
+
+  .project-tile {
+    width: 100%;
+  }
+}
+
+footer {
+  font-family: Times New Roman;
+  text-align: center;
+  padding: 20px;
+  background: white;
+  margin-top: 40px;
+  font-size: large;
+}
+
